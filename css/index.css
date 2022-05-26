@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(53, 53, 121);
+    border-radius: 0 0 70px 70px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom:10px
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: larger;
+    height: fit-content;
+
+}
+
+header ul #changemode {
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+header ul #changemode:hover {
+    background-color: rgb(182, 35, 182)
+}
+
+header ul #changecolor {
+    color: white;
+    margin-bottom: 3px;
+    padding-bottom:1px;
+
+
+}
+
+header nav ul #changecolor #hiddenul {
+    list-style: none;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 2px;
+    position: absolute;
+
+}
+
+header nav ul #changecolor #hiddenul li {
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 2px;
+    padding-left: 10px;
+
+
+}
+
+header nav ul #changecolor #hiddenul li::selection {
+    background-color: white;
+}
+
+header nav ul #changecolor #hiddenul li:hover {
+    border-bottom: 1px solid red;
+}
+
+#section_1 {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+    background-color: red;
+}
+
+#section_1 h2 {
+    text-align: center
+}
+
+#section_1 .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 400px;
+
+
+}
+
+#section_1 .flex img {
+    height: 300px;
+    margin-bottom: 6px
+}
+
+#section_1 .flex p {
+    width: 450px;
+
+    margin-bottom: 6px
+}
+
+#section_2 {
+    width: 100%;
+    height: 500px;
+    background-color: brown
+}
+
+#section_2 h2 {
+    text-align: center
+}
+
+#section_2 .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 400px;
+
+
+}
+
+#section_2 .flex img {
+    height: 300px;
+    margin-bottom: 5px;
+}
+
+#section_2 .flex p {
+    width: 450px;
+
+
+}
+
+.dark {
+    background-color:black;
+    color: white
+}
+
+.rounded {
+    border-radius: 50%;
+    filter: grayscale(90%);
+}
