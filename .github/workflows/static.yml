@@ -35,6 +35,12 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Enable GitHub Pages
         uses: actions/configure-pages@v2
+        with:
+          script: |
+            return (await github.rest.repos.createPagesSite({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })).html_url;
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
